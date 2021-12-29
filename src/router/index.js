@@ -19,6 +19,22 @@ const routes = [
         component: () =>
             import(/* webpackChunkName: "about" */ "../views/About.vue"),
     },
+    {
+        path: "/Base",
+        component: () => import("../views/Base.vue"),
+    },
+    {
+        path: "/Flex",
+        component: () => import("../views/Flex.vue"),
+    },
+    {
+        path: "/LineHeight",
+        component: () => import("../views/LineHeight.vue"),
+    },
+    {
+        path: "/PositionAbsolute",
+        component: () => import("../views/PositionAbsolute.vue"),
+    },
 ]
 
 const router = new VueRouter({

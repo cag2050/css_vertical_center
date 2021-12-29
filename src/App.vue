@@ -4,6 +4,17 @@
             <router-link to="/">Home</router-link>
             |
             <router-link to="/about">About</router-link>
+            |
+            <router-link to="/Base">Base</router-link>
+            |
+            <router-link to="/Flex">align-items: center;</router-link>
+            |
+            <router-link to="/LineHeight">align-items: center;</router-link>
+            |
+            <router-link to="/PositionAbsolute"
+                >position: absolute;</router-link
+            >
+            |
         </div>
         <div>---下面是内容---</div>
         <router-view />
@@ -29,6 +40,19 @@
         &.router-link-exact-active {
             color: #42b983;
         }
+    }
+}
+
+// 公共样式
+.outer {
+    background-color: yellow;
+    width: 600px;
+    height: 400px;
+
+    .inner {
+        width: 400px;
+        height: 200px;
+        background-color: #ccc;
     }
 }
 </style>
